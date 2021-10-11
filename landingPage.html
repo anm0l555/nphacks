@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Test page</title>
+<link href="" rel="stylesheet">
+</head>
+<body>
+<hr>
+<h1>Main Heading</h1>
+<p>This is sample text to check</p>
+<p>Same text 2</p>
+<a href="https://www.google.co.in/">Link to google</a>
+<br>
+<img src="" alt="this is an image"  width="60" height="60">
+<ol>
+	<li>Point one</li>
+	<li>Point one</li>
+	<li>Point one</li>
+</ol>
+<ul>
+	<li>Point one</li>
+	<li>Point one</li>
+	<li>Point one</li>
+</ul>
+<table>
+<tr><th>First</th><th>Second</th></tr>
+<tr><td>Hello</td><td>Welcome</td></tr>
+<tr><td>This</td><td>table</td></tr>
+</table>
+<form>
+<label for="fname">First Name</label>
+<input type="text" id="fname" name="fname" value="Abhi"><br>
+<label for="Lname">Last Name</label>
+<input type="text" id="Lname" name="Lname" value="Gupta"><br>
+<label for="html">HTML</label>
+<input type="radio" id="html" name="fav-language"><br>
+<label for="css">CSS</label>
+<input type="radio" id="css" name="fav-language"><br>
+<label for="javascript">Javascript</label>
+<input type="checkbox" id="javascript" name="fav-language"><br>
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Click Me <button>
+</form><br>
+<div id="demo"><p>text</p></div>
+<audio controls>
+<source src="" type="/mpeg">
+</audio>
+
+//use of getElementId appendChild,createTextNode,createElement;
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var h = document.createElement("H1");
+  var t = document.createTextNode("Hello World");
+  h.appendChild(t);
+  document.getElementById("demo").appendChild(h);
+}
+<hr>
+</body>
+</html>
